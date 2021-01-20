@@ -3,9 +3,6 @@ language: crystal
 services:
   - docker
 
-crystal:
-  - latest
-  - nightly
-
   script:
-  - docker build -t crystal_db . && docker run crystal_db
+  - docker build -t crystal_db .
+  - docker run crystal_db
